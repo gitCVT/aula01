@@ -139,6 +139,37 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 -----------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git add .
+--------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   comandos-Git.txt
+        modified:   index.html
+---------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git commit -m "Git Modificado v1.1"
+[master 54e82da] Git Modificado v1.1
+ 2 files changed, 87 insertions(+), 2 deletions(-)
+--------------------------------
 
 
+----------------------------------------------------
+                 GIT LOG
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git log
+commit 54e82da4b79f945ffdf9fd267f635256c25b4dc0 (HEAD -> master)
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:50:04 2023 -0300
 
+    Git Modificado v1.1
+
+commit e572fc05a7571611c221b718c219a49512b432fb
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:42:08 2023 -0300
+
+    Git Inicial
