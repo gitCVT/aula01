@@ -173,3 +173,76 @@ Author: sergio <sergio@gmail.com>
 Date:   Wed Jul 19 21:42:08 2023 -0300
 
     Git Inicial
+------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   comandos-Git.txt
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+-------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git add .
+-----------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   comandos-Git.txt
+        modified:   index.html
+-------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git commit -m "Git Modificado v1.2"
+[master cbb29e7] Git Modificado v1.2
+ 2 files changed, 32 insertions(+), 1 deletion(-)
+-------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git log
+commit cbb29e70d66ad74ae490e22b03c4df9cbdc4d7ce (HEAD -> master)
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:57:52 2023 -0300
+
+    Git Modificado v1.2
+
+commit 54e82da4b79f945ffdf9fd267f635256c25b4dc0
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:50:04 2023 -0300
+
+    Git Modificado v1.1
+
+commit e572fc05a7571611c221b718c219a49512b432fb
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:42:08 2023 -0300
+
+    Git Inicial
+----------------------------------------
+
+
+----------------------------------------------------
+                 GIT CHECKOUT
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git log
+commit cbb29e70d66ad74ae490e22b03c4df9cbdc4d7ce (HEAD -> master)
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:57:52 2023 -0300
+
+    Git Modificado v1.2
+
+commit 54e82da4b79f945ffdf9fd267f635256c25b4dc0
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:50:04 2023 -0300
+
+    Git Modificado v1.1
+
+commit e572fc05a7571611c221b718c219a49512b432fb
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:42:08 2023 -0300
+
+    Git Inicial
+----------------------------
