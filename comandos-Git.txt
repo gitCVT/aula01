@@ -1,5 +1,8 @@
 #Curso de Git e Github:https://www.youtube.com/watch?v=192HgwRgOYE&t=3s
 
+----------------------------------------------------
+          COMANDOS BASICOS
+----------------------------------------------------
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~
 $ git --version
 git version 2.39.1.windows.1
@@ -20,6 +23,12 @@ $ dir
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads
 $ cd GIT_GITHUB
 -----------------------------------------
+
+
+
+----------------------------------------------------
+          INICIALIZAR O GIT
+----------------------------------------------------
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB
 $ git init
 Initialized empty Git repository in C:/Users/js058/Downloads/GIT_GITHUB/.git/
@@ -40,6 +49,22 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 -------------------------------------------
+
+
+----------------------------------------------------
+            CONFIGURAR O USUARIO
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git config --global user.name sergio
+--------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git config --global user.email sergio@gmail.com
+-------------------------------------
+
+
+----------------------------------------------------
+          ADD ARQUIVOS/PROJETOS
+----------------------------------------------------
 jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
 $ git add index.html
 ---------------------------------------
@@ -57,3 +82,63 @@ Untracked files:
   (use "git add <file>..." to include in what will be committed)
         comandos-Git.txt
 ------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git add .
+-----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   comandos-Git.txt
+        new file:   index.html
+------------------------------------
+
+
+----------------------------------------------------
+          COMMIT ARQUIVOS/PROJETOS
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   comandos-Git.txt
+        new file:   index.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   comandos-Git.txt
+-----------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git commit -m "Git Inicial"
+[master (root-commit) e572fc0] Git Inicial
+ 2 files changed, 68 insertions(+)
+ create mode 100644 comandos-Git.txt
+ create mode 100644 index.html
+------------------------------------
+
+----------------------------------------------------
+          ADD ARQUIVOS/PROJETOS MODIFICADOS
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   comandos-Git.txt
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+-----------------------------------
+
+
+
