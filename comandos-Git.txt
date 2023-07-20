@@ -315,3 +315,427 @@ Date:   Wed Jul 19 21:42:08 2023 -0300
 
     Git Inicial
 --------------------------------------
+
+----------------------------------------------------
+                 GIT BRANCH CVT01
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git branch cvt01
+------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git log
+commit 8305193978c3ca24a1d2c9a5e600d4b11a406511 (HEAD -> master, cvt01)
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 09:22:32 2023 -0300
+
+    Git Modificado v1.4
+
+commit 9828c8498abb37861df32adbafaddf75fe598037
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 22:04:32 2023 -0300
+
+    Git Modificado v1.3
+
+commit cbb29e70d66ad74ae490e22b03c4df9cbdc4d7ce
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:57:52 2023 -0300
+
+    Git Modificado v1.2
+
+commit 54e82da4b79f945ffdf9fd267f635256c25b4dc0
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:50:04 2023 -0300
+
+    Git Modificado v1.1
+-----------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+--------------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git add .
+------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+-----------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git commit -m "Git Modificado v1.5"
+[master 173f41b] Git Modificado v1.5
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+--------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+-------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git checkout cvt01
+Switched to branch 'cvt01'
+------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt01)
+$ git status
+On branch cvt01
+nothing to commit, working tree clean
+-------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt01)
+$ git log
+commit 8305193978c3ca24a1d2c9a5e600d4b11a406511 (HEAD -> cvt01)
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 09:22:32 2023 -0300
+
+    Git Modificado v1.4
+
+commit 9828c8498abb37861df32adbafaddf75fe598037
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 22:04:32 2023 -0300
+
+    Git Modificado v1.3
+
+commit cbb29e70d66ad74ae490e22b03c4df9cbdc4d7ce
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:57:52 2023 -0300
+
+    Git Modificado v1.2
+
+commit 54e82da4b79f945ffdf9fd267f635256c25b4dc0
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:50:04 2023 -0300
+
+    Git Modificado v1.1
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt01)
+$
+---------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt01)
+$ git status
+On branch cvt01
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt01)
+$ git add .
+-----------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt01)
+$ git status
+On branch cvt01
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+----------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt01)
+$ git commit -m "Git BRANCH cvt01"
+[cvt01 8251bfb] Git BRANCH cvt01
+ 1 file changed, 5 insertions(+)
+------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt01)
+$ git log
+commit 8251bfbdd12d8bb823c49fd3e05eb51bd6b68c47 (HEAD -> cvt01)
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 10:06:34 2023 -0300
+
+    Git BRANCH cvt01
+
+commit 8305193978c3ca24a1d2c9a5e600d4b11a406511
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 09:22:32 2023 -0300
+
+    Git Modificado v1.4
+
+commit 9828c8498abb37861df32adbafaddf75fe598037
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 22:04:32 2023 -0300
+
+    Git Modificado v1.3
+
+commit cbb29e70d66ad74ae490e22b03c4df9cbdc4d7ce
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:57:52 2023 -0300
+
+    Git Modificado v1.2
+
+commit 54e82da4b79f945ffdf9fd267f635256c25b4dc0
+Author: sergio <sergio@gmail.com>
+----------------------------------------
+
+
+----------------------------------------------------
+        GIT BRANCH RENOMEAR(OBS: CUIDADO NÃO MUDE)
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt01)
+$ git checkout master
+Switched to branch 'master'
+------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git branch -m main
+---------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+----------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git log
+commit 173f41bb2c019c7be9485910c25d793da200a43a (HEAD -> main)
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 09:42:37 2023 -0300
+
+    Git Modificado v1.5
+
+commit 8305193978c3ca24a1d2c9a5e600d4b11a406511
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 09:22:32 2023 -0300
+
+    Git Modificado v1.4
+
+commit 9828c8498abb37861df32adbafaddf75fe598037
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 22:04:32 2023 -0300
+
+    Git Modificado v1.3
+
+commit cbb29e70d66ad74ae490e22b03c4df9cbdc4d7ce
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:57:52 2023 -0300
+
+    Git Modificado v1.2
+
+commit 54e82da4b79f945ffdf9fd267f635256c25b4dc0
+Author: sergio <sergio@gmail.com>
+------------------------------------------------
+
+
+----------------------------------------------------
+                 GIT BRANCH CVT02
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git branch cvt02
+-------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contatos.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+--------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git add .
+---------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   contatos.html
+------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git commit -m "Git BRANCH MAIN"
+[main c65addd] Git BRANCH MAIN
+ 1 file changed, 14 insertions(+)
+ create mode 100644 contatos.html
+ ----------------------------------------------------
+ jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+----------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git log
+commit c65addd36b84bddd4cb5423e40bad21baaa60eb4 (HEAD -> main)
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 10:28:38 2023 -0300
+
+    Git BRANCH MAIN
+
+commit 173f41bb2c019c7be9485910c25d793da200a43a (cvt02)
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 09:42:37 2023 -0300
+
+    Git Modificado v1.5
+
+commit 8305193978c3ca24a1d2c9a5e600d4b11a406511
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 09:22:32 2023 -0300
+
+    Git Modificado v1.4
+
+commit 9828c8498abb37861df32adbafaddf75fe598037
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 22:04:32 2023 -0300
+
+    Git Modificado v1.3
+
+commit cbb29e70d66ad74ae490e22b03c4df9cbdc4d7ce
+Author: sergio <sergio@gmail.com>
+---------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git checkout cvt02
+Switched to branch 'cvt02'
+----------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt02)
+$ git status
+On branch cvt02
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        contatos.html
+        quemsomos.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+-------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt02)
+$ git add .
+----------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt02)
+$ git status
+On branch cvt02
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   contatos.html
+        new file:   quemsomos.html
+--------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt02)
+$ git commit -m "Git BRANCH CVT02"
+[cvt02 6abe7f0] Git BRANCH CVT02
+ 2 files changed, 29 insertions(+)
+ create mode 100644 contatos.html
+ create mode 100644 quemsomos.html
+ -----------------------------------------------------
+ jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt02)
+$ git log
+commit 6abe7f03e4522a43a35ee316627b6bb423fe6249 (HEAD -> cvt02)
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 10:35:35 2023 -0300
+
+    Git BRANCH CVT02
+
+commit 173f41bb2c019c7be9485910c25d793da200a43a
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 09:42:37 2023 -0300
+
+    Git Modificado v1.5
+
+commit 8305193978c3ca24a1d2c9a5e600d4b11a406511
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 09:22:32 2023 -0300
+
+    Git Modificado v1.4
+
+commit 9828c8498abb37861df32adbafaddf75fe598037
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 22:04:32 2023 -0300
+
+    Git Modificado v1.3
+
+commit cbb29e70d66ad74ae490e22b03c4df9cbdc4d7ce
+Author: sergio <sergio@gmail.com>
+-----------------------------------------------
+
+
+----------------------------------------------------
+                 RETORNANDO AO GIT BRANCH MAIN
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (cvt02)
+$ git checkout main
+Switched to branch 'main'
+--------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git log
+commit c65addd36b84bddd4cb5423e40bad21baaa60eb4 (HEAD -> main)
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 10:28:38 2023 -0300
+
+    Git BRANCH MAIN
+
+commit 173f41bb2c019c7be9485910c25d793da200a43a
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 09:42:37 2023 -0300
+
+    Git Modificado v1.5
+
+commit 8305193978c3ca24a1d2c9a5e600d4b11a406511
+Author: sergio <sergio@gmail.com>
+Date:   Thu Jul 20 09:22:32 2023 -0300
+
+    Git Modificado v1.4
+
+commit 9828c8498abb37861df32adbafaddf75fe598037
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 22:04:32 2023 -0300
+
+    Git Modificado v1.3
+
+commit cbb29e70d66ad74ae490e22b03c4df9cbdc4d7ce
+Author: sergio <sergio@gmail.com>
+--------------------------------------------
+
+----------------------------------------------------
+               MERGE GIT BRANCH MAIN
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git merge cvt01
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+######### RESOLVER O CONFLITO  ###########
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main|MERGING)
+$ git status
+On branch main
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+        both modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+#########
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main|MERGING)
+$ git add .
+#########
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main|MERGING)
+$ git status
+On branch main
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+        modified:   index.html
+##########
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main|MERGING)
+$ git commit -m "Git BRANCH Resolved merge conflict with cvt01 branch"
+[main aaa2165] Git BRANCH Resolved merge conflict with cvt01 branch
+###########
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (main)
+$ git merge cvt02
+Merge made by the 'ort' strategy.
+ quemsomos.html | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+ create mode 100644 quemsomos.html
+
+----------------------------------------------------
+
+
