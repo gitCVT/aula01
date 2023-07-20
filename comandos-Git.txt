@@ -246,3 +246,72 @@ Date:   Wed Jul 19 21:42:08 2023 -0300
 
     Git Inicial
 ----------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git checkout e572fc
+Note: switching to 'e572fc'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at e572fc0 Git Inicial
+---------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB ((e572fc0...))
+$ git log
+commit e572fc05a7571611c221b718c219a49512b432fb (HEAD)
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:42:08 2023 -0300
+
+    Git Inicial
+-------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB ((8989a9c...))
+$ git checkout master
+Warning: you are leaving 1 commit behind, not connected to
+any of your branches:
+
+  8989a9c Git Modificado v1.4
+
+If you want to keep it by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 8989a9c
+
+Switched to branch 'master'
+---------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB (master)
+$ git log
+commit 9828c8498abb37861df32adbafaddf75fe598037 (HEAD -> master)
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 22:04:32 2023 -0300
+
+    Git Modificado v1.3
+
+commit cbb29e70d66ad74ae490e22b03c4df9cbdc4d7ce
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:57:52 2023 -0300
+
+    Git Modificado v1.2
+
+commit 54e82da4b79f945ffdf9fd267f635256c25b4dc0
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:50:04 2023 -0300
+
+    Git Modificado v1.1
+
+commit e572fc05a7571611c221b718c219a49512b432fb
+Author: sergio <sergio@gmail.com>
+Date:   Wed Jul 19 21:42:08 2023 -0300
+
+    Git Inicial
+--------------------------------------
