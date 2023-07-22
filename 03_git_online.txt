@@ -1,0 +1,165 @@
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01
+$ cd projeto_online/
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online
+$ git clone https://github.com/gitCVT/aula01.git
+Cloning into 'aula01'...
+remote: Enumerating objects: 65, done.
+remote: Counting objects: 100% (65/65), done.
+remote: Compressing objects: 100% (44/44), done.
+remote: Total 65 (delta 26), reused 54 (delta 20), pack-reused 0
+Receiving objects: 100% (65/65), 25.74 KiB | 6.43 MiB/s, done.
+Resolving deltas: 100% (26/26), done.
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online
+$ cd aula01/
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (main)
+$ git branch
+* main
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (main)
+$ git branch jsergio
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (main)
+$ git branch
+  jsergio
+* main
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (main)
+$ git checkout jsergio
+Switched to branch 'jsergio'
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (jsergio)
+$ git status
+On branch jsergio
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    js141911
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (jsergio)
+$ git add .
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (jsergio)
+$ git status
+On branch jsergio
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    js141911
+
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (jsergio)
+$ git commit -m "Deletado o Arquivo jsergio"
+[jsergio 28c4a1d] Deletado o Arquivo jsergio
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 js141911
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (jsergio)
+$ git status
+On branch jsergio
+nothing to commit, working tree clean
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (jsergio)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (main)
+$ git merge jsergio
+Updating d013c83..28c4a1d
+Fast-forward
+ js141911 | 1 -
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 js141911
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 229 bytes | 229.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: Bypassed rule violations for refs/heads/main:
+remote:
+remote: - Changes must be made through a pull request.
+remote:
+To https://github.com/gitCVT/aula01.git
+   d013c83..28c4a1d  main -> main
+branch 'main' set up to track 'origin/main'.
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (main)
+$ git push -u origin jsergio
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'jsergio' on GitHub by visiting:
+remote:      https://github.com/gitCVT/aula01/pull/new/jsergio
+remote:
+To https://github.com/gitCVT/aula01.git
+ * [new branch]      jsergio -> jsergio
+branch 'jsergio' set up to track 'origin/jsergio'.
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (main)
+$ git checkout jsergio
+Switched to branch 'jsergio'
+Your branch is up to date with 'origin/jsergio'.
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (jsergio)
+$ git status
+On branch jsergio
+Your branch is up to date with 'origin/jsergio'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        02_comandos_GIT.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (jsergio)
+$ git add .
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (jsergio)
+$ git commit -m "ADD Arquivo jsergio"
+[jsergio 1c92a21] ADD Arquivo jsergio
+ 1 file changed, 418 insertions(+)
+ create mode 100644 02_comandos_GIT.txt
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (jsergio)
+$ git push origin jsergio
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 2.57 KiB | 2.57 MiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: Bypassed rule violations for refs/heads/jsergio:
+remote:
+remote: - Changes must be made through a pull request.
+remote:
+To https://github.com/gitCVT/aula01.git
+   28c4a1d..1c92a21  jsergio -> jsergio
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (jsergio)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_online/aula01 (main)
+$ git pull origin
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 623 bytes | 89.00 KiB/s, done.
+From https://github.com/gitCVT/aula01
+   28c4a1d..09a70ca  main       -> origin/main
+Updating 28c4a1d..09a70ca
+Fast-forward
+ 02_comandos_GIT.txt | 418 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 418 insertions(+)
+ create mode 100644 02_comandos_GIT.txt
+
