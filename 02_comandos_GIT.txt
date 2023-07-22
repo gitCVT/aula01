@@ -1,0 +1,418 @@
+#Curso de Git e Github:https://www.youtube.com/watch?v=192HgwRgOYE&t=3s
+#https://www.youtube.com/@GuiadoProgramador
+###############################################################
+----------------------------------------------------
+          COMANDOS BASICOS INICIO
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~
+$ git --version
+git version 2.41.0.windows.3
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~
+$ pwd
+/c/Users/js058
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~
+$ cd Downloads
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads
+$ cd GIT_GITHUB
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB
+$ cd AULAS_01/
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01
+$ clear
+//////////////////////////////////////////////////////
+----------------------------------------------------
+          COMANDOS BASICOS FIM
+----------------------------------------------------
+###############################################################
+----------------------------------------------------
+          INICIALIZAR O GIT INICIO
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01
+$ git init
+Initialized empty Git repository in C:/Users/js058/Downloads/GIT_GITHUB/AULAS_01/.git/
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01 (main)
+$ git config --global user.name "sergio santos"
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01 (main)
+$ git config --global user.email sergio@gmail.com
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01 (main)
+$ git config --global --list
+user.email=sergio@gmail.com
+user.name=sergio santos
+credential.https://git.heroku.com.provider=generic
+//////////////////////////////////////////////////////
+----------------------------------------------------
+          INICIALIZAR O GIT FIM
+----------------------------------------------------
+###############################################################
+----------------------------------------------------
+          COMANDOS GIT INICIO
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git add index.html
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git rm --cached index.html
+rm 'index.html'
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git commit -m "Git Inicial"
+[main (root-commit) 1a63ac2] Git Inicial
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git status
+On branch main
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        estilo.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git add .
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   estilo.css
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git commit -m "Git ADD Arquivo estilo.css"
+[main 85a9d47] Git ADD Arquivo estilo.css
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 estilo.css
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git log
+commit 85a9d47389f4e5a1286e05818b48cd97a12a1074 (HEAD -> main)
+Author: sergio santos <sergio@gmail.com>
+Date:   Fri Jul 21 10:25:20 2023 -0300
+
+    Git ADD Arquivo estilo.css
+
+commit 1a63ac23f91bcd195f45662b985db69cdcd4c418
+Author: sergio santos <sergio@gmail.com>
+Date:   Fri Jul 21 10:13:17 2023 -0300
+
+    Git Inicial
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git log
+commit a25a800b085f9a1831ddb0a169bbf9fa387456e1 (HEAD -> main)
+Author: sergio santos <sergio@gmail.com>
+Date:   Fri Jul 21 10:32:16 2023 -0300
+
+    Git ADD Titulo -CURSO GIT GITHUB
+
+commit 85a9d47389f4e5a1286e05818b48cd97a12a1074
+Author: sergio santos <sergio@gmail.com>
+Date:   Fri Jul 21 10:25:20 2023 -0300
+
+    Git ADD Arquivo estilo.css
+
+commit 1a63ac23f91bcd195f45662b985db69cdcd4c418
+Author: sergio santos <sergio@gmail.com>
+Date:   Fri Jul 21 10:13:17 2023 -0300
+
+    Git Inicial
+//////////////////////////////////////////////////////
+----------------------------------------------------
+          COMANDOS GIT FIM
+----------------------------------------------------
+###############################################################
+----------------------------------------------------
+           DESFAZER COMIT(CHECKOUT) GIT INICIO
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git log
+commit 60101cafe519278f534e4d912e09dc84ced4c5aa (HEAD -> main)
+Author: sergio santos <sergio@gmail.com>
+Date:   Fri Jul 21 10:43:26 2023 -0300
+
+    Git ADD Imagem
+
+commit a25a800b085f9a1831ddb0a169bbf9fa387456e1
+Author: sergio santos <sergio@gmail.com>
+Date:   Fri Jul 21 10:32:16 2023 -0300
+
+    Git ADD Titulo -CURSO GIT GITHUB
+
+commit 85a9d47389f4e5a1286e05818b48cd97a12a1074
+Author: sergio santos <sergio@gmail.com>
+Date:   Fri Jul 21 10:25:20 2023 -0300
+
+    Git ADD Arquivo estilo.css
+
+commit 1a63ac23f91bcd195f45662b985db69cdcd4c418
+Author: sergio santos <sergio@gmail.com>
+Date:   Fri Jul 21 10:13:17 2023 -0300
+
+    Git Inicial
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git log --oneline
+60101ca (HEAD -> main) Git ADD Imagem
+a25a800 Git ADD Titulo -CURSO GIT GITHUB
+85a9d47 Git ADD Arquivo estilo.css
+1a63ac2 Git Inicial
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git checkout 85a9d47
+Note: switching to '85a9d47'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 85a9d47 Git ADD Arquivo estilo.css
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 ((85a9d47...))
+$ git log --oneline
+85a9d47 (HEAD) Git ADD Arquivo estilo.css
+1a63ac2 Git Inicial
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 ((85a9d47...))
+$ git checkout main
+Previous HEAD position was 85a9d47 Git ADD Arquivo estilo.css
+Switched to branch 'main'
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git log --oneline
+60101ca (HEAD -> main) Git ADD Imagem
+a25a800 Git ADD Titulo -CURSO GIT GITHUB
+85a9d47 Git ADD Arquivo estilo.css
+1a63ac2 Git Inicial
+//////////////////////////////////////////////////////
+----------------------------------------------------
+           DESFAZER COMIT(CHECKOUT) GIT FIM
+----------------------------------------------------
+###############################################################
+----------------------------------------------------
+          DESFAZER COMIT(REVERT) GIT INICIO
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git log --oneline
+e19d9b6 (HEAD -> main) Git ADD TELA no Arquivo estilo.css
+32f7f39 Git ADD COR no Arquivo estilo.css
+60101ca Git ADD Imagem
+a25a800 Git ADD Titulo -CURSO GIT GITHUB
+85a9d47 Git ADD Arquivo estilo.css
+1a63ac2 Git Inicial
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git revert 32f7f39
+Auto-merging estilo.css
+CONFLICT (content): Merge conflict in estilo.css
+error: could not revert 32f7f39... Git ADD COR no Arquivo estilo.css
+hint: After resolving the conflicts, mark them with
+hint: "git add/rm <pathspec>", then run
+hint: "git revert --continue".
+hint: You can instead skip this commit with "git revert --skip".
+hint: To abort and get back to the state before "git revert",
+hint: run "git revert --abort".
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main|REVERTING)
+$ git add estilo.css
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main|REVERTING)
+$ git commit -m "Git DEL TELA no Arquivo estilo.css"
+[main 679a4dc] Git DEL TELA no Arquivo estilo.css
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main|REVERTING)
+$ git revert --continue
+hint: Waiting for your editor to close the file...
+//////////////////////////////////////////////////////
+Revert "Git ADD COR no Arquivo estilo.css"
+
+This reverts commit 32f7f39b87145b65d0d709ebb64937fc3ed1ddf4.
+
+# Conflicts:
+#	estilo.css
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch main
+# You are currently reverting commit 32f7f39.
+#
+# Changes to be committed:
+#	modified:   estilo.css
+#
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main|REVERTING)
+$ git revert --continue
+[main 1c72a75] Revert "Git ADD COR no Arquivo estilo.css"
+ 1 file changed, 2 deletions(-)
+ //////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git log --oneline
+1c72a75 (HEAD -> main) Revert "Git ADD COR no Arquivo estilo.css"
+c6c7465 Git DEL TELA no Arquivo estilo.css
+679a4dc Git DEL TELA no Arquivo estilo.css
+e19d9b6 Git ADD TELA no Arquivo estilo.css
+32f7f39 Git ADD COR no Arquivo estilo.css
+60101ca Git ADD Imagem
+a25a800 Git ADD Titulo -CURSO GIT GITHUB
+85a9d47 Git ADD Arquivo estilo.css
+1a63ac2 Git Inicial
+----------------------------------------------------
+          DESFAZER COMIT(REVERT) GIT FIM
+----------------------------------------------------
+###############################################################
+----------------------------------------------------
+          CRIANDO BRANCH GIT INICIO
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git branch
+* main
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git branch teste
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git branch
+* main
+  teste
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git checkout teste
+Switched to branch 'teste'
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (teste)
+$ git branch
+  main
+* teste
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (teste)
+$ git status
+On branch teste
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        script.js
+
+nothing added to commit but untracked files present (use "git add" to track)
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (teste)
+$ git log --oneline
+a0b2a14 (HEAD -> teste) Git BRANCH TESTE ADD Arquivo script.js
+1c72a75 (main) Revert "Git ADD COR no Arquivo estilo.css"
+c6c7465 Git DEL TELA no Arquivo estilo.css
+679a4dc Git DEL TELA no Arquivo estilo.css
+e19d9b6 Git ADD TELA no Arquivo estilo.css
+32f7f39 Git ADD COR no Arquivo estilo.css
+60101ca Git ADD Imagem
+a25a800 Git ADD Titulo -CURSO GIT GITHUB
+85a9d47 Git ADD Arquivo estilo.css
+1a63ac2 Git Inicial
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (teste)
+$ git checkout main
+Switched to branch 'main'
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git log --oneline
+1c72a75 (HEAD -> main) Revert "Git ADD COR no Arquivo estilo.css"
+c6c7465 Git DEL TELA no Arquivo estilo.css
+679a4dc Git DEL TELA no Arquivo estilo.css
+e19d9b6 Git ADD TELA no Arquivo estilo.css
+32f7f39 Git ADD COR no Arquivo estilo.css
+60101ca Git ADD Imagem
+a25a800 Git ADD Titulo -CURSO GIT GITHUB
+85a9d47 Git ADD Arquivo estilo.css
+1a63ac2 Git Inicial
+----------------------------------------------------
+         CRIANDO BRANCH GIT FIM
+----------------------------------------------------
+###############################################################
+----------------------------------------------------
+         MERGER BRANCH GIT INICIO
+----------------------------------------------------
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git status
+On branch main
+nothing to commit, working tree clean
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git merge teste
+Updating 1c72a75..a0b2a14
+Fast-forward
+ .gitignore | 0
+ script.js  | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 .gitignore
+ create mode 100644 script.js
+//////////////////////////////////////////////////////
+jsergio@LAPTOP-CBSQ8HH4 MINGW64 ~/Downloads/GIT_GITHUB/AULAS_01/projeto_01 (main)
+$ git log --oneline
+a0b2a14 (HEAD -> main, teste) Git BRANCH TESTE ADD Arquivo script.js
+1c72a75 Revert "Git ADD COR no Arquivo estilo.css"
+c6c7465 Git DEL TELA no Arquivo estilo.css
+679a4dc Git DEL TELA no Arquivo estilo.css
+e19d9b6 Git ADD TELA no Arquivo estilo.css
+32f7f39 Git ADD COR no Arquivo estilo.css
+60101ca Git ADD Imagem
+a25a800 Git ADD Titulo -CURSO GIT GITHUB
+85a9d47 Git ADD Arquivo estilo.css
+1a63ac2 Git Inicial
+//////////////////////////////////////////////////////
+----------------------------------------------------
+         MERGER BRANCH GIT FIM
+----------------------------------------------------
+###############################################################
